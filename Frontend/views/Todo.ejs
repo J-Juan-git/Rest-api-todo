@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./Partials/StyleLinks') %>
+    <link rel="stylesheet" href="../CSS/Todo.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="inside-box">
+            <div class="title">Todo List</div>
+            <form action="/todo" method="POST" class="add-text">
+                <input required type="text" placeholder="Todo task" name="todo" id="textbox">
+                <input onclick="showTodo()" type="submit" value="Add" class="button">
+            </form>
+            <div id="todo-list"></div>
+        </div>
+    </div>    
+    <%- include('./Partials/ScriptLinks') %>
+    <script src="../JS/Todo.js"></script>
+</body>
+</html>
